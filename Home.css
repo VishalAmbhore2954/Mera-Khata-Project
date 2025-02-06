@@ -35,7 +35,7 @@ body{
     font-weight: bolder;
  }
 
- .search input {
+ form .search input {
    width: 460px;
    height: 23px;
    border-radius: 5px;
@@ -48,7 +48,7 @@ body{
     font-family: sans-serif;
  }
 
- .search button {
+ .nav form .search button {
     background-color: #FDF89F;
     cursor: pointer;
     margin: 5px;
@@ -91,7 +91,9 @@ body{
    color: white;
  }
 
+
  #credit {
    background-color: rgb(44, 216, 17);
    color: white;
  }
+
