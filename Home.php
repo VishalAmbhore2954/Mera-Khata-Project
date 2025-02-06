@@ -25,8 +25,8 @@
         <img src="Peacock-Clipart-PNG-1.png" alt="">
     </div>
     <div class="btns">
-        <a type="button" id="add" href="Given.php">Given</a>
-        <a type="button" id="credit" href="Payments.php">Payment</a>
+        <a type="button" id="add" href="addGiven.php">Add Given</a>
+        <a type="button" id="credit" href="addCredit.php">Add Credit</a>
     </div>
 </body>
 </html>
