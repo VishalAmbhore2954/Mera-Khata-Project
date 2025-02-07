@@ -38,6 +38,12 @@ a {
     width: 120px;
 }
 
+.span {
+    border: 2px solid black;
+    margin: 20px;
+    color: brown;
+}
+
 #given {
     background-color: red;
 }

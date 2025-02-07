@@ -18,8 +18,8 @@
         <h2><?php echo $row['name']?></h2>
         <label for="">Amount Remain : </label>
         <h1>&#8377;<?php echo $row['total']?></h1>
-        <label for="" class="date">Date : </label><label for="" class="date"><?php echo $row['date']?></label><br>
-        <span><?php echo $row['data']?></span><br>
+        <!-- <label for="" class="date">Date : </label><label for="" class="date"><?php echo $row['date']?></label><br> -->
+        <div class="span"><span><?php echo $row['data']?></span><br></div>
         <a href="given.php?mno=<?php echo $row['mobile']?>" id='given'>Add Given</a>
         <a href='Payments.php?mno=<?php echo $row['mobile']?>' id='credit'>Add Credit</a>
         <a href='mailto : <?php echo $row['email']?>'  id='mail'>Send Mail</a>
