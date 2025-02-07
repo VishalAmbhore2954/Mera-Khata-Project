@@ -27,6 +27,7 @@
     <div class="btns">
         <a type="button" id="add" href="addGiven.php">Add Given</a>
         <a type="button" id="credit" href="addCredit.php">Add Credit</a>
+        <a type="button" id="allCust" href="DisplayCustomer.php" style="background-color:blue; color:white">Customers</a>
     </div>
 </body>
 </html>
