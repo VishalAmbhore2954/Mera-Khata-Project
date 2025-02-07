@@ -21,7 +21,7 @@
     
     <?php
 
-    while($row =mysqli_fetch_assoc($result)){
+    while($row=mysqli_fetch_assoc($result)){
         $sum = $sum+$row["total"];
 
         echo "<tr>
@@ -30,14 +30,13 @@
         <td>".$row["mobile"]."</td>
         <td>".$row["email"]."</td>
         <td>".$row["total"]."</td>
-        <td><a href='given.php?mno=$row[mobile]' id='given'>Add Given</a><a href='' id='detail'>Detail</a></td>        
+        <td><a href='given.php?mno=$row[mobile]' id='given'>Add Given</a><a href='custDetail.php?mno=$row[mobile]' id='detail'>Detail</a></td>        
         </tr>";
     }
     ?>
-        </table>
-        <div class='sum'>
-            <label for="">Total Amount To Credit : </label>
-            &#8377; <?php echo $sum; ?> 
-        </div>
-    <?php
-?>
+    </table>
+    <div class="sum1">
+        <label for="">Total Amount To Credit </label>
+        &#8377; <?php echo $sum; ?>
+    </div>
+    

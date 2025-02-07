@@ -35,9 +35,7 @@
     }
     ?>
         </table>
-        <div class='sum'>
+        <div class='sum1'>
             <label for="">Total Amount To Credit : </label>
             &#8377; <?php echo $sum; ?> 
         </div>
-    <?php
-?>
