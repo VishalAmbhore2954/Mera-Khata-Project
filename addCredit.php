@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="DisplayCustomer.css">
-
+<style>
+    .sum1 {
+        font-weight: bolder;
+        font-size: 25px;
+        color: red;
+    }
+</style>
 <?php
     error_reporting(0);
     include("connection.php");
@@ -30,7 +36,7 @@
         <td>".$row["mobile"]."</td>
         <td>".$row["email"]."</td>
         <td>".$row["total"]."</td>
-        <td><a href='Payments.php?mno=$row[mobile]' id='credit'>Credit</a><a href='' id='detail'>Detail</a></td>        
+        <td><a href='Payments.php?mno=$row[mobile]' id='credit'>Credit</a><a href='custDetail.php?mno=$row[mobile]' id='detail'>Detail</a></td>        
         </tr>";
     }
     ?>
