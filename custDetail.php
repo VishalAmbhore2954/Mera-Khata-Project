@@ -23,6 +23,7 @@
         <a href="given.php?mno=<?php echo $row['mobile']?>" id='given'>Add Given</a>
         <a href='Payments.php?mno=<?php echo $row['mobile']?>' id='credit'>Add Credit</a>
         <a href='mailto : <?php echo $row['email']?>'  id='mail'>Send Mail</a>
+        <a href="Home.php" id="home">Home</a>
     </div>
 </body>
 </html>
