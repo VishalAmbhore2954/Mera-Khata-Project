@@ -24,6 +24,12 @@
             margin-left: 37px;
             display: inline;
         }
+
+        img:hover {
+            width: 205px;
+            display: inline;
+        }
+
         label {
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-weight: bolder;
