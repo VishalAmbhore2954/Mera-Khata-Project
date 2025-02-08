@@ -16,7 +16,11 @@
         $amt2 = $_POST['amt'];
         $amt = $amt2."+";
         
-$data1 = $desc1 ."~~~~~Given Date => ".(date("d-m-y"))." : "." Given Items => ".$data;
+        if($result['total']==0){
+            $data1 = " &#9997; Given Date &#9755; ".(date("d-m-y"))." : "." Given Items &#9755; ".$data;
+        }else{
+            $data1 = $desc1 ." &#9997; Given Date &#9755; ".(date("d-m-y"))." : "." Given Items &#9755; ".$data;
+        }
         //logic of sum all number input by input field like(11+12+13 = 36)
         $sum;
         $num='';
@@ -34,7 +38,10 @@ $data1 = $desc1 ."~~~~~Given Date => ".(date("d-m-y"))." : "." Given Items => ".
         $sql2 = "UPDATE customer SET data = '$data1', total = '$sum1' WHERE mobile = '$mno'";
         $result2 = mysqli_query($con,$sql2);
         if($result2){
-            echo "<script>alert('Amount added successfuly')</script>";
+            echo "<script>alert('Rs. $sum added successfuly')
+            window.location.href='http://localhost/mera-khata-project/Home.php';
+            </script>";
+            // echo $mno;
         }else{
             echo "<script>alert('Fail to add')</script>";
         } 
@@ -56,7 +63,7 @@ $data1 = $desc1 ."~~~~~Given Date => ".(date("d-m-y"))." : "." Given Items => ".
         </div>
         <form method="POST">
             <label for="uname">CUSTOMER NAME :</label><br>
-            <input type="text" name="uname" value="<?php echo $result['name']?>" required><br>
+            <input type="text" name="uname" value="<?php echo $result['name']?>" required readonly><br>
             <label for="pass" >ADD AMOUNT :</label><br>
             <input type="text" name="amt" id="amt" required><br>
             <label for="cpass" >ADD DESCREPTION :</label><br>
