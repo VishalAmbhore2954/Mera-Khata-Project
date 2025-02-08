@@ -12,7 +12,9 @@
         $result = mysqli_query($con,$sql);
 
             if($result){
-                echo "<script>alert('Data inserted successfully')</script>";
+                echo "<script>alert('Data inserted successfully')
+                window.location.href='http://localhost/mera-khata-project/Home.php';
+                </script>";
              }else{
                 echo "<script>alert('Data not inserted')</script>";
             }
