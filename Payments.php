@@ -9,17 +9,25 @@
 <?php
     if(isset($_POST['submit'])){
         $data = $_POST['desc'];
+        $data2 = $row['data'];
         $amt = $_POST['amt'];
-        $amt2 = $amt - $row['total'];
+        $amt2 = $row['total'] - $amt;
+
+        if($row['total']==$amt){
+            $data1 = $data;
+        }else{
+            $data1 = $data2 ." &#9997; Recieved Date &#9755; ".(date("d-m-y"))." : "." Credit Rupees &#9755; ".$amt;
+        }
+
         if($row['total']==0){
             header('location:alreadyDone.php');
         }else{
-            $sql2 = "UPDATE customer SET data = '$data', total = '$amt2' WHERE mobile = '$mno'";
+            $sql2 = "UPDATE customer SET data = '$data1', total = '$amt2' WHERE mobile = '$mno'";
             $result2 = mysqli_query($con,$sql2);
-            if($row['total']>$amt){
-                header("Home.php?");
+            if($amt2==0){
+                header("location:Congrats.php");
             }else{
-                header("location:Congrats.php?");
+                header("location:remainSomeAmt.php");
             }
         }
     }
