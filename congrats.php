@@ -54,6 +54,7 @@
 <!-- <img src="backArrow" alt="Go Home" onclick="Home.php"> -->
     <div class="container">
         <img id="" src="HappyImg.png" alt="fun imogy"><br>
+        <label for="" id="con">CONGRATULATIONS!!</label><br>
         <label for="" id="con">PAYMENT RECIEVED!!</label><br><br>
         <a href="Home.php">GO HOME</a>
     </div>
