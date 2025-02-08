@@ -68,7 +68,7 @@
             <input type="text" name="amt" id="amt" required><br>
             <label for="cpass" >ADD DESCREPTION :</label><br>
             <input type="text" name="desc" required><br>
-            <input type="submit" name="submit" value="ADD CUSTOMER" id="button"><br>
+            <input type="submit" name="submit" value="ADD AMOUNT" id="button"><br>
             <div class="regLink">
                 <label for="cpass"></label><a href="Home.php">Home Page</a>
             </div>
