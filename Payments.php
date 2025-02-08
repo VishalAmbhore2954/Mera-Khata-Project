@@ -36,11 +36,11 @@
 <body>
     <div class="form">
         <div class="heading">
-            <h1>CREADIT AMOUNT</h1>
+            <h1>CREDIT AMOUNT</h1>
         </div>
         <form method="POST">
             <label for="uname">CUSTOMER NAME :</label><br>
-            <input type="text" value="<?php echo $row['name']?>" name="uname" required><br>
+            <input type="text" value="<?php echo $row['name']?>" name="uname" required readonly><br>
             <label for="pass" >REMAIN AMOUNT :</label><br>
             <input type="text" name="amt" id="amt" value="<?php echo $row['total']?>"  required><br>
             <label for="cpass" >ADD DESCREPTION :</label><br>
