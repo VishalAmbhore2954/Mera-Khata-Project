@@ -1,5 +1,11 @@
 <link rel="stylesheet" href="DisplayCustomer.css">
-
+<style>
+    .sum1 {
+        font-weight: bolder;
+        font-size: 25px;
+        color: red;
+    }
+</style>
 <?php
     error_reporting(0);
     include("connection.php");
@@ -35,8 +41,8 @@
     }
     ?>
     </table>
-    <div class="sum1">
-        <label for="">Total Amount To Credit </label>
-        &#8377; <?php echo $sum; ?>
-    </div>
+<div class='sum1'>
+    <label for="">Total Amount To Credit : </label>
+    &#8377; <?php echo $sum; ?> 
+</div>
     
