@@ -17,6 +17,13 @@
 
         a {
             text-decoration: none;
+            display: inline;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #FDF89F;
+            color: black;
         }
 
         img {
@@ -42,7 +49,7 @@
 <!-- <img src="backArrow" alt="Go Home" onclick="Home.php"> -->
     <div class="container">
         <img id="" src="CryingImogy.png" alt="fun imogy"><br>
-        <label for="">DATA NOT FOUND !!</label><br>
+        <label for="">DATA NOT FOUND !!</label><br><br>
         <a href="Home.php">GO HOME</a>
     </div>
 </body>

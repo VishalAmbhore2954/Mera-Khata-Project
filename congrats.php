@@ -17,6 +17,13 @@
 
         a {
             text-decoration: none;
+            display: inline;
+            border: 1px solid black;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #FDF89F;
+            color: black;
         }
 
         img {
@@ -47,7 +54,7 @@
 <!-- <img src="backArrow" alt="Go Home" onclick="Home.php"> -->
     <div class="container">
         <img id="" src="HappyImg.png" alt="fun imogy"><br>
-        <label for="" id="con">PAYMENT RECIEVED!!</label><br>
+        <label for="" id="con">PAYMENT RECIEVED!!</label><br><br>
         <a href="Home.php">GO HOME</a>
     </div>
 </body>
