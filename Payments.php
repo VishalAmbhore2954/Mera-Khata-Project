@@ -11,12 +11,16 @@
         $data = $_POST['desc'];
         $amt = $_POST['amt'];
         $amt2 = $amt - $row['total'];
-        $sql2 = "UPDATE customer SET data = '$data', total = '$amt2' WHERE mobile = '$mno'";
-        $result2 = mysqli_query($con,$sql2);
-        if($row['total']>$amt){
-            header("Home.php?");
+        if($row['total']==0){
+            header('location:alreadyDone.php');
         }else{
-            header("location:Congrats.php?");
+            $sql2 = "UPDATE customer SET data = '$data', total = '$amt2' WHERE mobile = '$mno'";
+            $result2 = mysqli_query($con,$sql2);
+            if($row['total']>$amt){
+                header("Home.php?");
+            }else{
+                header("location:Congrats.php?");
+            }
         }
     }
 ?>
@@ -40,7 +44,7 @@
             <label for="pass" >REMAIN AMOUNT :</label><br>
             <input type="text" name="amt" id="amt" value="<?php echo $row['total']?>"  required><br>
             <label for="cpass" >ADD DESCREPTION :</label><br>
-            <input type="text" name="desc"><br>
+            <input type="text" name="desc" value="All Payment Done"><br>
             <input type="submit" name="submit" value="ADD PAYMENT" id="button"><br>
             <div class="regLink">
                 <label for="cpass"></label><a href="Home.php">Home Page</a>
