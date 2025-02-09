@@ -3,7 +3,7 @@
     if(isset($_POST['submit'])){
         $search = $_POST['search'];
 
-        $query = "SELECT * FROM customer WHERE name = '$search' or mobile = '$search'";
+        $query = "SELECT * FROM customer WHERE name = '$search' or mobile = '$search' or email = '$search'";
         $result = mysqli_query($con,$query);
         $data = mysqli_fetch_assoc($result);
         $mno = $data['mobile'];
