@@ -18,7 +18,7 @@
         <h2><?php echo $row['name']?></h2>
         <label for="">Amount Remain : </label>
         <h1>&#8377;<?php echo $row['total']?></h1>
-        <!-- <label for="" class="date">Date : </label><label for="" class="date"><?php echo $row['date']?></label><br> -->
+        <label for="" class="date">Mobile Number : &#128222; </label><label for="" class="date"><?php echo $row['mobile']?></label><br>
         <div class="span"><span><?php echo $row['data']?></span><br></div>
         <a href="given.php?mno=<?php echo $row['mobile']?>" id='given'>Add Given</a>
         <a href='Payments.php?mno=<?php echo $row['mobile']?>' id='credit'>Add Credit</a>
