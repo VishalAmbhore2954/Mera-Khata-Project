@@ -31,7 +31,7 @@ include("SearchData.php");
         <span id="logoname">मेरा खाता</span>
         <form method="POST">
             <div class="search"><input type="text" name="search" placeholder="  Enter Mobile Number / Customer name"
-                    required><button name="submit">Search</button></div>
+                    required><button name="submit">&#128269; Search</button></div>
         </form>
         <a href="addCustomer.php" type="button" id="cust">&#128104;Add Customer</a>
     </div>
@@ -39,10 +39,10 @@ include("SearchData.php");
         <img src="Peacock-Clipart-PNG-1.png" alt="">
     </div>
     <div class="btns">
-        <a type="button" id="add" href="addGiven.php">Add Given</a>
-        <a type="button" id="credit" href="addCredit.php">Add Credit</a>
+        <a type="button" id="add" href="addGiven.php"> &#8593; Add Given</a>
+        <a type="button" id="credit" href="addCredit.php">&#8595; Add Credit</a>
         <a type="button" id="allCust" href="DisplayCustomer.php"
-            style="background-color:blue; color:white">Customers</a>
+            style="background-color:#F87144; color:white">&#128101; Customers</a>
     </div>
 </body>
 
