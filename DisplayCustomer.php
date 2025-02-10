@@ -9,7 +9,7 @@
 <?php
     error_reporting(0);
     include("connection.php");
-    $sql = "SELECT * FROM customer";
+    $sql = "SELECT * FROM customer order by name";
     $result = mysqli_query($con,$sql);
     // $row = mysqli_fetch_assoc($result);
 
